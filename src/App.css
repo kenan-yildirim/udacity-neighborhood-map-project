@@ -1,0 +1,66 @@
+.App {
+     display: flex;
+     flex-direction: row;
+     height: 100%;
+     width: 100%;
+     background-color: cadetblue;
+     position: absolute;
+     padding: 15px;
+     border-radius: 7px;
+}
+ #map {
+     height: 100%;
+     min-width: 75%;
+     border-radius: 7px;
+     position: relative;
+}
+ .infoWindow{
+     width: 270px;
+}
+ p {
+     padding: none;
+     margin: none;
+}
+ .nav_bar {
+     height: 20px;
+     width: 85%;
+     align-self: center;
+     background-color: lightgrey;
+     color: #d60a0a;
+     padding: 15px;
+     margin: 0 10px 0 10px;
+     text-transform: uppercase;
+     text-align: center;
+     font-weight: bolder;
+     border-radius: 7px;
+}
+ .listSights {
+     width: 85%;
+     height: 85%;
+     overflow-y: scroll;
+}
+ .search_box {
+     min-height: 28px;
+     width: 90%;
+     background-color: white;
+     border:1px solid #d60a0a;
+     border-radius: 5px;
+     margin: 5%;
+     font-size: 90%;
+}
+ .location {
+     border: 4px double white;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     list-style-type: none;
+     color: azure;
+     border-radius: 7px;
+}
+
+// Responsive part is added in accordance with the recommendations in the review
+ @media screen and (max-width: 414px) {
+     .App {
+         flex-direction: column;
+    }
+}
